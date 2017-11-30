@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+
+<div class="section"> <!-- Off The Grid Promote Widget -->
+  <div class="lesson"> 
+    <h2>
+      Off The Grid Promote Widget
+    </h2>
+     
+     <div id="otg-widget"
+        data-site-url="https://offthegrid.com"
+        data-location-id="1e3419ec-6ac8-48a3-8a7a-c5ff8fa3b821"
+        data-highlight-color="#4b12e2"
+        data-background-color="#d64ed3"
+      ></div>
+      
+      <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var script = document.createElement("script");
+        script.src = "https://offthegrid.com/wp-content/themes/offthegrid/library/js/min/widget-loader.js";
+        document.body.appendChild(script);
+      })
+      </script>
+      
+      
+      
+  </div>
+</div>
+
+{% endblock %}
+
